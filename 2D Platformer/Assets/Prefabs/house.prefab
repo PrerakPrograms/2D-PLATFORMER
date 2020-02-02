@@ -120,5 +120,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3cd268730e037944b792c3686017c34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keyScript: {fileID: 0}
-  key: {fileID: 0}
+  keyScript: {fileID: 7239888988401695369, guid: 83c5ac3d526294649967810dab473cbc,
+    type: 3}
+  key: {fileID: 7239888988401695374, guid: 83c5ac3d526294649967810dab473cbc, type: 3}
