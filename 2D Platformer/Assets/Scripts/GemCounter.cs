@@ -5,19 +5,19 @@ using UnityEngine.UI;
 
 public class GemCounter : MonoBehaviour
 {
-    pickup pkup;
-    public GameObject gem;
     Text txt;
-    public string str;
+    public static bool isdead;
+    public static int gemsamount;
     void Start()
     {
-        pkup = gem.GetComponent<pickup>();
+
         txt = GetComponent<Text>();
-        str = pkup.gemscollected.ToString();
     }
 
     void Update()
     {
-        txt.text = "x" + str;
+  
+            txt.text = "x" + gemsamount.ToString();
+        
     }
 }

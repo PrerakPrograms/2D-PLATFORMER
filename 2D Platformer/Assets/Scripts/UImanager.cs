@@ -20,4 +20,12 @@ public class UImanager : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+    public void OnPlayk()
+    {
+        SceneManager.LoadScene(0);
+    }
+    public void OnExitk()
+    {
+        Application.Quit();
+    }
 }

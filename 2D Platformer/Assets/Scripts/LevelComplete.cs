@@ -22,7 +22,7 @@ public class LevelComplete : MonoBehaviour
     }
     public void CheckKey() { 
     if(keyScript.hasKey){
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(4);
         Debug.Log("LevelComplete");
     }
     else

@@ -7,6 +7,7 @@ TagManager:
   - Gem
   - Platform
   - Barrel
+  - play
   layers:
   - Default
   - TransparentFX

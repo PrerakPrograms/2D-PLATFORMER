@@ -7,7 +7,6 @@ public class KeyScript : MonoBehaviour
     public bool hasKey;
    
     public SpriteRenderer keysprite;
-    public BoxCollider2D KeyCollider;
 
     void Start()
     {
@@ -17,11 +16,12 @@ public class KeyScript : MonoBehaviour
     {
 
     }
-    void OnCollisionEnter2D(Collision2D col)
+    void OnTriggerEnter2D(Collider2D col)
     {
         if(col.gameObject.tag=="Player"){
             keysprite.sprite = null;
             hasKey = true;
+
         }
     }
     

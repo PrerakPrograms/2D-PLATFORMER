@@ -6,7 +6,6 @@ using TMPro;
 public class pickup : MonoBehaviour
 {
     
-   public int gemscollected;
   
    
     // Start is called before the first frame update
@@ -20,7 +19,7 @@ public class pickup : MonoBehaviour
     {
    
     }
-    void OnCollisionEnter2D(Collision2D col)
+    void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.tag == "Player")
         {
@@ -30,7 +29,7 @@ public class pickup : MonoBehaviour
         }
     }
         void AddScore(){
-             gemscollected++;
+            GemCounter.gemsamount += 1;
              
 
         }

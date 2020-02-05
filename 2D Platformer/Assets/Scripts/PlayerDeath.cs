@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.UI;
 public class PlayerDeath : MonoBehaviour
 {
     int health=3;
@@ -10,9 +10,10 @@ public class PlayerDeath : MonoBehaviour
     public GameObject h2;
     public GameObject h3;
     public Transform spawnpoint;
+    int index;
     void Start()
     {
-
+         index = Random.Range(1, 3);
     }
 
     void Update()
@@ -55,7 +56,8 @@ public class PlayerDeath : MonoBehaviour
                     h3.gameObject.SetActive(false);
                     h2.gameObject.SetActive(false);
                     h1.gameObject.SetActive(false);
-                    SceneManager.LoadScene("Level 1");
+                    SceneManager.LoadScene(index);
+                    
                     break;
                     
             }
