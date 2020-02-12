@@ -22,7 +22,7 @@ public class UImanager : MonoBehaviour
     }
     public void OnPlayk()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
     public void OnExitk()
     {

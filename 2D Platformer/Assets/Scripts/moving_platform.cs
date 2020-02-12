@@ -8,8 +8,9 @@ public class moving_platform : MonoBehaviour
     public Transform pos1, pos2;
     public float speed;
     public Transform startpos;
-
+    public GameObject player;
     Vector3 nextpos;
+   
     void Start()
     {
         nextpos = startpos.position;
@@ -24,8 +25,17 @@ public class moving_platform : MonoBehaviour
         }
         transform.position = Vector3.MoveTowards(transform.position,nextpos,speed*Time.deltaTime);
     }
-    private void OnDrawGizomos()
+    void OnCollisionEnter2D(Collision2D Collision)
     {
-        Gizmos.DrawLine(pos1.position,pos2.position);
+        if (Collision.gameObject.tag == "Player")
+        {
+            Collision.collider.transform.SetParent(transform);
+        }
     }
-}
+        void OnCollisionExit2D(Collision2D Collision)
+    {
+        if(Collision.gameObject.tag=="Player"){
+            Collision.collider.transform.SetParent(null);
+        }
+    }
+    }

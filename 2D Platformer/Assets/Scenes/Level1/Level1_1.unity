@@ -10155,6 +10155,7 @@ MonoBehaviour:
   pos2: {fileID: 2010179069}
   speed: 3
   startpos: {fileID: 431422724}
+  player: {fileID: 1871492070}
 --- !u!4 &308339334
 Transform:
   m_ObjectHideFlags: 0
@@ -14619,23 +14620,28 @@ PrefabInstance:
     - target: {fileID: 2001663910924675642, guid: 7a79c8ba08b8ae3408f28c4ac9ac10c0,
         type: 3}
       propertyPath: m_Offset.x
-      value: -0.061983123
+      value: -0.060382366
       objectReference: {fileID: 0}
     - target: {fileID: 2001663910924675642, guid: 7a79c8ba08b8ae3408f28c4ac9ac10c0,
         type: 3}
       propertyPath: m_Size.x
-      value: 0.6501695
+      value: 0.646968
       objectReference: {fileID: 0}
     - target: {fileID: 2001663910924675642, guid: 7a79c8ba08b8ae3408f28c4ac9ac10c0,
         type: 3}
       propertyPath: m_Offset.y
-      value: 0.35840124
+      value: 0.3471915
       objectReference: {fileID: 0}
     - target: {fileID: 2001663910924675642, guid: 7a79c8ba08b8ae3408f28c4ac9ac10c0,
         type: 3}
       propertyPath: m_Size.y
-      value: 1.5614911
+      value: 1.5839106
       objectReference: {fileID: 0}
+    - target: {fileID: 2001663910924675642, guid: 7a79c8ba08b8ae3408f28c4ac9ac10c0,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 49b95cef0fde5fe4989ab67c6c8e4777, type: 2}
     - target: {fileID: 2001663909973770102, guid: 7a79c8ba08b8ae3408f28c4ac9ac10c0,
         type: 3}
       propertyPath: m_LocalPosition.y
