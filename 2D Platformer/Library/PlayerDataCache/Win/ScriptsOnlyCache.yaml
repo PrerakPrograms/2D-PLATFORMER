@@ -46,8 +46,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -554,53 +556,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 1839735485
       Script: {instanceID: 0}
-    Assets/Scenes/SampleScene.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 9732}
-    - Class: 114
-      Script: {instanceID: 9978}
-    - Class: 114
-      Script: {instanceID: 10042}
-    - Class: 114
-      Script: {instanceID: 10622}
-    - Class: 114
-      Script: {instanceID: 10970}
-    - Class: 114
-      Script: {instanceID: 11304}
-    - Class: 114
-      Script: {instanceID: 12002}
-    - Class: 114
-      Script: {instanceID: 12550}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
   scriptHashData:
   - hash:
       serializedVersion: 2
@@ -952,7 +907,7 @@ ScriptsOnlyBuild:
     className: ActivateCamOnPlay
   - hash:
       serializedVersion: 2
-      Hash: c9395edafaf49d253a0045108eb94c55
+      Hash: 10102c6438ef177c22413122ab50becd
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: moving_platform
@@ -1490,6 +1445,5 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Level1/Level1_1.unity
   - Assets/Scenes/Level1/level1_2.unity
   - Assets/Scenes/Level1/LEVEL 1.unity
-  - Assets/Scenes/SampleScene.unity
   - Assets/Scenes/Level2/LEVEL 2.unity
   playerPath: C:/Users/Prerak/Documents/UnityProject/2D Platformer/Build2/2D Platformer.exe

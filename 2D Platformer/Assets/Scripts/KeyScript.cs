@@ -23,6 +23,7 @@ public class KeyScript : MonoBehaviour
             hasKey = true;
 
         }
+    
     }
     
 }

@@ -31,15 +31,17 @@ public class PlayerMovement : MonoBehaviour
         }
         if (Input.GetButtonDown("Crouch"))
         {
-            crouch = true;
-            
+           crouch = true;
+          
         }
         else if (Input.GetButtonUp("Crouch"))
         {
             
-            crouch = false;
+           crouch = false;
 
-        }
+       }
+     
+        
         anim.SetFloat("Running", Mathf.Abs(hMove));
     }
    public void OnLanding()
