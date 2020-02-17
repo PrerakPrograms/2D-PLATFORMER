@@ -8,6 +8,9 @@ TagManager:
   - Platform
   - Barrel
   - play
+  - TurnPoint
+  - Enemy
+  - Boss
   layers:
   - Default
   - TransparentFX
@@ -17,12 +20,12 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Enviornment
   - BackGround
   - Player
   - Ground
   - Coins
-  - 
+  - Enemy
   - 
   - 
   - 

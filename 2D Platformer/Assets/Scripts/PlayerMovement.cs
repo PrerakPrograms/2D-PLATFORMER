@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
     bool jump = false;
     bool crouch = false;
     public Animator anim;
+    public GameObject bullet;
+    public Transform shotpoint;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +23,10 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetMouseButtonDown(0))
+        {
+            Instantiate(bullet, shotpoint.position, transform.rotation);
+        } 
 	hMove = Input.GetAxisRaw("Horizontal") * PlayerSpeed;
 		
 

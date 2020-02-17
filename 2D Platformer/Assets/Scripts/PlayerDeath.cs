@@ -32,6 +32,10 @@ public class PlayerDeath : MonoBehaviour
         {
             Destroy(col.gameObject);
         }
+        if (col.gameObject.tag == "Enemy")
+        {
+            Destroy(col.gameObject);
+        }
     }
 
       public  void HeatlhCheck(){
